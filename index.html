@@ -12,13 +12,13 @@
             function multiAnim(){
                 var x = $(".pic1");
 
-                x.animate({left: '0px'},8000,function(){
+                x.animate({left: '0px'},4000,function(){
                    
                 });
-                x.animate({bottom: '0px'},8000,function(){
+                x.animate({bottom: '0px'},4000,function(){
                     $(".pic1").css("transform","rotate(-180deg) scaleY(-1)")
                 });
-                x.animate({left: '800px'},8000,function(){
+                x.animate({left: '800px'},4000,function(){
                 });
             }
             $(".pic1").ready(function(){
@@ -41,6 +41,7 @@
             position: absolute;
             bottom: 0px;
             height: 100px;
+            width: 10%
             
         }
     </style>
