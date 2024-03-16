@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='jquery-3.7.1.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            function multiAnim(){
+                var x = $(".pic1");
+
+                x.animate({left: '0px'},8000,function(){
+                   
+                });
+                x.animate({bottom: '0px'},8000,function(){
+                    $(".pic1").css("transform","rotate(-180deg) scaleY(-1)")
+                });
+                x.animate({left: '800px'},8000,function(){
+                });
+            }
+            $(".pic1").ready(function(){
+                multiAnim();
+            });
+        });
+            
+    </script>
+  </head>
+  <body>
+    <style>
+        .wter{
+            background-image: url(pic.jpeg);
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+        }
+        .pic1{
+            position: absolute;
+            bottom: 0px;
+            height: 100px;
+            
+        }
+    </style>
+    <div class="wter">
+        <img src="fish.gif" alt="fish" class="pic1" height="60p">
+    </div>
+  </body>
+  </html>
